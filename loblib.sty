@@ -1,0 +1,129 @@
+% LobLib - The Lobster Library
+% 
+% (c) 2013 Bryce Evans
+% LPPL LaTeX Public Project License
+%  
+\NeedsTeXFormat{LaTeX2e}% 
+\RequirePackage{tikz,tikzrput,pgfornament}%
+\ProvidesPackage{loblib}[2013/05/18 v0.1 The Lobster Library]%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\def\i{\pgfusepath{clip}}%
+\def\k{\pgfusepath{stroke}}%
+\let\o\pgfpathclose
+\let\s\pgfusepathqfillstroke
+\def\p #1#2{\pgfqpoint{#1bp}{#2bp}}%
+\def\m #1 #2 {\pgfpathmoveto{\p{#1}{#2}}}%
+\def\r #1 #2 #3 #4 {\pgfpathrectangle{\p{#1}{#2}}{%
+\p{#3}{#4}}}%
+\def\l #1 #2 {\pgfpathlineto{\p{#1}{#2}}}%
+\def\c #1 #2 #3 #4 #5 #6 {%
+\pgfpathcurveto{\p{#1}{#2}}{\p{#3}{#4}}{\p{#5}{#6}}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\getsizes}[2]% width, height
+{   \path (current bounding box.south west);
+    \pgfgetlastxy{\xsw}{\ysw}
+    \path (current bounding box.north east);
+    \pgfgetlastxy{\xne}{\yne}
+    \pgfmathsetmacro{\picwidth}{(\xne-\xsw)/28.453}
+    \pgfmathsetmacro{\picheight}{(\yne-\ysw)/28.453}
+    \pgfmathsetmacro{\picxscale}{#1/\picwidth}
+    \pgfmathsetmacro{\picyscale}{#2/\picheight}
+    \xdef\xsca{\picxscale}
+    \xdef\ysca{\picyscale}
+}
+
+
+\newcommand{\scaleimg}[2]% draw commands, width, height
+{ \smash{\vphantom{
+    \begin{tikzpicture}
+        #1
+        \getsizes{#2}{#2}
+    \end{tikzpicture}
+    }}
+    \begin{tikzpicture}[xscale=\xsca,yscale=\ysca]
+        #1
+    \end{tikzpicture}
+}
+
+
+%%%%%%%%%%%%
+
+\definecolor{crimson}{rgb}{.5,0.0,0}
+\definecolor{darkblue}{rgb}{0,0.0,0.3}
+\definecolor{darknavy}{rgb}{0,0.0,0.1}
+\definecolor{darkgreen}{rgb}{0.0,0.3,0.1}
+\definecolor{darkgrey}{rgb}{0.3,0.3,0.3}
+\definecolor{smokeblue}{rgb}{0.4,0.55,0.6}
+\definecolor{lobblue}{rgb}{0.35,0.4,0.45}
+\definecolor{shadow}{rgb}{0.85,0.85,0.85}
+
+\requirepackage[scale=2,color=lobblue!10,angle=0,pages=some,placement=bottom]{background}
+
+\newcommand{\example}[2][YYY]{Mandatory arg: #2;
+                                 Optional arg: #1.}
+
+
+\newcommand{\dir}{objects/}
+
+\newcommand{\lob}[2][]{
+	\begin{tikzpicture}[#1]
+	\input{\dir lob#2.tikz}
+\end{tikzpicture}
+}
+
+
+\newcommand{\lobclaw}[2][]{
+	\begin{tikzpicture}[#1]
+	\input{\dir #2.tikz}
+\end{tikzpicture}
+}
+
+\newcommand{\coursename}{ Econometrics  }
+\newcommand{\coursenumber}{ Econ 3130 }
+\newcommand{\name}{ Bryce Evans  }
+\newcommand{\netid}{ bae43  }
+\renewcommand{\today}{   January 1st, 2000  }
+\newcommand{\hwnum}{1}
+\newcommand{\hwtitle}{ Set Theory }
+
+\newcommand{\lobtitle}{
+
+\thispagestyle{empty}
+    
+\vspace*{-3cm}          
+\hspace*{-0.5cm}        
+\lob[rotate=180,shadow,xscale=-1.2,yscale=1.2]{77}
+\vspace*{-2.8cm}
+
+
+
+
+\Large \hspace{4em} {
+\Huge \textbf{\coursenumber:}\coursename
+        \begin{center}
+\hspace{7em} \huge \textit{{\color{crimson} HW\hwnum\--- \textbf{\hwtitle} }}
+\end{center}
+
+%\renewcommand{\today}
+
+}
+\normalsize
+}
+
+\newcommand{\wiselob}{
+    \vspace*{.7cm}
+\hspace*{9cm} 
+\lob[lobblue, scale=1.2]{83} \hfill
+\vspace*{-.7cm}
+
+}
+
+\renewcommand{\blacksquare}{\lobclaw{claw_simple}}
+
+\endinput
+% end
