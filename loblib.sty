@@ -62,7 +62,7 @@
 \definecolor{lobblue}{rgb}{0.35,0.4,0.45}
 \definecolor{shadow}{rgb}{0.85,0.85,0.85}
 
-\requirepackage[scale=2,color=lobblue!10,angle=0,pages=some,placement=bottom]{background}
+\RequirePackage[scale=2,color=lobblue!10,angle=0,pages=some,placement=bottom]{background}
 
 \newcommand{\example}[2][YYY]{Mandatory arg: #2;
                                  Optional arg: #1.}
@@ -122,6 +122,20 @@
 \vspace*{-.7cm}
 
 }
+
+\newcommand{\lobwatermark}[1][]{
+%\ifx&#1&%
+  % parameter not given
+  
+%\else
+  % parameter given
+
+  % working sets:
+  % \hspace{4cm}\lob{83}
+%\fi
+\SetBgContents{#1}
+}
+
 
 \renewcommand{\blacksquare}{\lobclaw{claw_simple}}
 
