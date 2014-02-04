@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.20)  3 FEB 2014 23:46
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.5.20)  3 FEB 2014 23:55
 entering extended mode
 **loblibdemo.tex
 (D:\Files\Latex\tex\latex\misc\loblib\documentation\examples\loblibdemo.tex
@@ -669,19 +669,30 @@ ne 4.
 (C:\Users\Bryce\AppData\Roaming\MiKTeX\2.9\tex\latex\adforn\uornementsadf.fd)){
 C:/Users/Bryce/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}{C:/Users/Bryc
 e/AppData/Roaming/MiKTeX/2.9/fonts/map/dvips/adforn/OrnementsADF.map}
+(C:\Users\Bryce\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip58
+\f@ncyO@elh=\skip59
+\f@ncyO@erh=\skip60
+\f@ncyO@olh=\skip61
+\f@ncyO@orh=\skip62
+\f@ncyO@elf=\skip63
+\f@ncyO@erf=\skip64
+\f@ncyO@olf=\skip65
+\f@ncyO@orf=\skip66
+)
 (D:\Files\Latex\tex\latex\misc\loblib\documentation\examples\loblibdemo.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
-LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 ABD: EveryShipout initializing macros
 (C:\Users\Bryce\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
@@ -735,72 +746,64 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 (D:\Files\Latex\tex\latex\misc\loblib\objects\lob77.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
-(D:\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
-File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
-
-(D:\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
-File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
 Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
  []
 
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
+(D:\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--62
+(D:\Programs\MiKTeX\tex\latex\amsfonts\umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--67
+Underfull \hbox (badness 10000) in paragraph at lines 69--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--75
 
  []
 
 (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 (D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz) [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 119--121
+Underfull \hbox (badness 10000) in paragraph at lines 127--129
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
+
+(D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [2] (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 151--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--155
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
@@ -809,110 +812,169 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-(D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz) [3]
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+
+ []
+
+(D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz)
 (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[3] (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
  []
 
-(D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz) [4]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+(D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz)
+(D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 230--232
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
+
+(D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 235--236
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 251--252
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 257.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 265.
 
 (D:\Programs\MiKTeX\tex\latex\base\omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 257.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 265.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 264--265
-
- []
-
-(D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz) [6]
-Underfull \hbox (badness 10000) in paragraph at lines 266--268
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 277--279
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
+
+ []
+
+(D:\Files\Latex\tex\latex\misc\loblib\objects\lob84.tikz)
+(D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 274--276
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
 
  []
 
 (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
-Underfull \hbox (badness 10000) in paragraph at lines 280--281
+Underfull \hbox (badness 10000) in paragraph at lines 288--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
+
+(D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 (D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
 (D:\Files\Latex\tex\latex\misc\loblib\objects\lob83.tikz)
-Overfull \hbox (33.53017pt too wide) in paragraph at lines 305--308
+Overfull \hbox (33.53017pt too wide) in paragraph at lines 313--316
 []|   []
  []
+
+(D:\Files\Latex\tex\latex\misc\loblib\objects\claw_simple.tikz)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.75645pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
 
 [8] (D:\Files\Latex\tex\latex\misc\loblib\documentation\examples\loblibdemo.aux
 ) ) 
 Here is how much of TeX's memory you used:
- 13636 strings out of 493921
- 250208 string characters out of 3150891
- 1183192 words of memory out of 3000000
- 16568 multiletter control sequences out of 15000+200000
+ 13778 strings out of 493921
+ 252454 string characters out of 3150891
+ 1187324 words of memory out of 3000000
+ 16692 multiletter control sequences out of 15000+200000
  14071 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 63i,13n,68p,752b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,13n,68p,752b,764s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Bryce/AppData/Roaming/MiKTeX/2.9/fonts/enc/dvips/adforn/OrnementsA
 DF.enc}<C:/Users/Bryce/AppData/Roaming/MiKTeX/2.9/fonts/type1/arkandis/adforn/O
 rnementsADF.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
@@ -927,7 +989,7 @@ fonts/cm/cmr8.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 eX/fonts/type1/public/amsfonts/cm/cmti10.pfb><D:/Programs/MiKTeX/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb><D:/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmtt10.pfb>
-Output written on loblibdemo.pdf (8 pages, 670130 bytes).
+Output written on loblibdemo.pdf (8 pages, 675697 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
