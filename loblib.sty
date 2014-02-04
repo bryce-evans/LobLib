@@ -5,7 +5,8 @@
 %  
 \NeedsTeXFormat{LaTeX2e}% 
 \RequirePackage{tikz,tikzrput,pgfornament}%
-\ProvidesPackage{loblib}[2013/05/18 v0.1 The Lobster Library]%
+\ProvidesPackage{loblib}[2013/09/16 v0.13 The Lobster Library]%
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -62,46 +63,63 @@
 \definecolor{lobblue}{rgb}{0.35,0.4,0.45}
 \definecolor{shadow}{rgb}{0.85,0.85,0.85}
 
+
 \RequirePackage[scale=2,color=lobblue!10,angle=0,pages=some,placement=bottom]{background}
+\SetBgContents{\hspace{4cm}\lob{84}}
 
 \newcommand{\example}[2][YYY]{Mandatory arg: #2;
                                  Optional arg: #1.}
 
-
+%% Define the directory
 \newcommand{\dir}{objects/}
 
+%% Adds all lob objects 
 \newcommand{\lob}[2][]{
 	\begin{tikzpicture}[#1]
 	\input{\dir lob#2.tikz}
 \end{tikzpicture}
 }
 
-
+%% Adds a claw
 \newcommand{\lobclaw}[2][]{
+	\begin{tikzpicture}[#1]
+	\input{\dir claw_#2.tikz}
+\end{tikzpicture}
+}
+
+%% Adds a custom figure 
+\newcommand{\lobcustom}[2][]{
 	\begin{tikzpicture}[#1]
 	\input{\dir #2.tikz}
 \end{tikzpicture}
 }
 
-\newcommand{\coursename}{ Econometrics  }
-\newcommand{\coursenumber}{ Econ 3130 }
+%% Adds a section break with a simple claw 
+%% in the center of the line
+\newcommand{\lobsectionbreak}{
+\begin{center}
+\adforn{21}\quad\lobclaw[scale=.8]{simple}\quad\adforn{49}\\
+\end{center}
+}
+
+%% Makes a lobster claw title like 
+%% shown in the documentation
+\newcommand{\coursename}{ Course  }
+\newcommand{\coursenumber}{ DEPT 9999 }
 \newcommand{\name}{ Bryce Evans  }
 \newcommand{\netid}{ bae43  }
 \renewcommand{\today}{   January 1st, 2000  }
 \newcommand{\hwnum}{1}
-\newcommand{\hwtitle}{ Set Theory }
+\newcommand{\hwtitle}{ Title }
 
 \newcommand{\lobtitle}{
 
 \thispagestyle{empty}
     
-\vspace*{-3cm}          
+\vspace*{-4cm}          
 \hspace*{-0.5cm}        
-\lob[rotate=180,shadow,xscale=-1.2,yscale=1.2]{77}
+\lob[rotate=180,lobblue!15,xscale=-1.2,yscale=1.2]{77}
 \vspace*{-2.8cm}
-
-
-
 
 \Large \hspace{4em} {
 \Huge \textbf{\coursenumber:}\coursename
@@ -115,6 +133,15 @@
 \normalsize
 }
 
+%% Adds LOBSTER font. Font files must be
+%% copied to the file directory, 
+%% doesn't work from loblib directory
+\newcommand\lobfont[1]{{\usefont{T1}{custom}{m}{n} #1 }}
+\newcommand\customfont[1]{{\usefont{T1}{custom}{m}{n} #1 }}
+
+
+%% Adds a big old blue lobster to the bottom
+%% right of a page
 \newcommand{\wiselob}{
     \vspace*{.7cm}
 \hspace*{9cm} 
@@ -123,6 +150,7 @@
 
 }
 
+%% Not implemented- shortcut for adding watermarks
 \newcommand{\lobwatermark}[1][]{
 %\ifx&#1&%
   % parameter not given
@@ -136,8 +164,8 @@
 \SetBgContents{#1}
 }
 
-
-\renewcommand{\blacksquare}{\lobclaw{claw_simple}}
+%% Adds a small claw in place of \blacksquare
+\newcommand{\lobtomb}{\lobclaw{simple}}
 
 \endinput
 % end
