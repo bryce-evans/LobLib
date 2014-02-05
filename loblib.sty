@@ -1,12 +1,20 @@
 % LobLib - The Lobster Library
 % 
-% (c) 2013 Bryce Evans
+% (c) 2014 Bryce Evans
 % LPPL LaTeX Public Project License
 %  
 \NeedsTeXFormat{LaTeX2e}% 
-\RequirePackage{tikz,tikzrput,pgfornament}%
-\ProvidesPackage{loblib}[2013/09/16 v0.13 The Lobster Library]%
+\RequirePackage{tikz,tikzrput}%
+\ProvidesPackage{loblib}[2014/02/05 v0.14]%
 
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{lmodern}   
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage{adforn}
+\usepackage{lmodern}
+\pdfmapfile{+ OrnementsADF.map}
+\usepackage{adforn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -67,8 +75,9 @@
 \RequirePackage[scale=2,color=lobblue!10,angle=0,pages=some,placement=bottom]{background}
 \SetBgContents{\hspace{4cm}\lob{84}}
 
-\newcommand{\example}[2][YYY]{Mandatory arg: #2;
-                                 Optional arg: #1.}
+% for reference
+%\newcommand{\example}[2][YYY]{Mandatory arg: #2;
+%                                 Optional arg: #1.}
 
 %% Define the directory
 \newcommand{\dir}{objects/}
