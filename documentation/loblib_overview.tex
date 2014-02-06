@@ -8,8 +8,10 @@
 \usepackage{multicol}
 \usepackage{empheq}
 
+
 \usepackage{verbatim}
 \usepackage{comment}
+
 
 %no indent
 \setlength\parindent{0pt}
@@ -17,6 +19,8 @@
 \setlength{\topmargin}{-.5in}
 \setlength{\textheight}{9in}
 \setlength{\textwidth}{6.25in}
+
+
 \begin{document}
 \vspace*{-3cm}			
 \hspace*{-0.5cm}		
@@ -41,8 +45,6 @@
 \textit{Bryce Evans} \\
 \textit{February $5^{th}$, 2014}\\
 Version $\alpha\, 0.14$ \\
-
-
 
 \section*{Overview}
 
@@ -77,8 +79,6 @@ Copy the package files to\\ \texttt{MiKTeX/2.9/tex/latex/loblib} for Windows.\\
 
  PGFOrnament documentation may be found at\\ \texttt{http://altermundus.com/pages/downloads/packages/pgfornament/ornaments.pdf}.
 
-
-
 \section*{Usage}
 Usage is simple. Calling \texttt{\textbackslash lob[(optional\_styles)]\{FIGURE\_ID\}} will insert the image. Only one argument is taken for alternate forms as well. For these, the ID is incremented as 1, 1b, 1c, 1d, etc. \\
 
@@ -101,10 +101,8 @@ A concern is memory usage on repeated use of detailed figures. Figures may consi
 
 \end{multicols}
 
-
-
 \section*{Alternate Types}
-Multiple of the same figure may exist, for example outline, wire, and solid. This is not an option for all figures. \\
+Multiple of the same figure may exist, for example outline, wire, and solid. This is not an option for all figures, but is denoted by \texttt{0,0b,0c...}\\
 
 \vspace*{1em}
 
@@ -122,16 +120,21 @@ All parameters supported in Tikz are supported by LobLib. Pass in styles in brac
 
 \begin{multicols}{2}
 \begin{verbatim}
-\lob[scale=.6,fill=darkgreen ]{62}   
+\lob[scale=.6,fill=green ]{62}   
 \hspace*{-.5cm} \vspace*{-.2cm}
-\lob[scale=.7,fill=darkblue]{62b}
+\lob[scale=.7,fill=blue]{62b}
 \end{verbatim}
 
-\lob[scale=.6,fill=darkgreen ]{62}   
-\hspace*{-.5cm} \vspace*{-.2cm} \lob[scale=.7,fill=darkblue]{62b}
+\lob[scale=.6,fill=lobgreen ]{62}   
+\hspace*{-.5cm} \vspace*{-.2cm} \lob[scale=.7,fill=lobteal]{62b}
 \end{multicols}
 
-\section*{Other Uses}
+\section*{Section Breaks}
+Section breaks can be inserted showing a small claw using\texttt{\textbackslash lobsectionbreak}.
+
+\lobsectionbreak
+
+\section*{Bullets and Tombstones}
 Smaller items may be used as bullets:
 
 \begin{multicols}{2} 
@@ -170,12 +173,19 @@ x^2 + x^2 &= x^2 + xy\\
 2x^2-2xy&=x^2+xy-2xy\\
 2x^2-2xy &= x^2-xy\\
 \left(\frac{2x^2-2xy}{x^2-xy}\right)&=\left(\frac{x^2-xy}{x^2-xy}\right)\\
-2&= 1 \quad \lobclaw{claw_simple}
+2&= 1 \quad \lobclaw{simple}
 \end{align*}
 
 
 
 \end{multicols}
+
+\section*{Watermarks}
+Add a lobster watermark to any page with \texttt{\textbackslash lobwatermark}. 
+
+\textsc{Note:} Utilizes the \texttt{background} package and causes a conflict if the package settings are changed.
+
+%\lobwatermark
 
 \pagebreak
 \section*{Full List:}
@@ -232,9 +242,9 @@ x^2 + x^2 &= x^2 + xy\\
 \lob{90}
 \lob{91}
 
-\subsection*{92, (claw) big, (claw) simple, 29}
-\lob{92}
 
+\subsection*{92, [claw] big, [claw] simple, 29}
+\lob{92}
 \lobclaw{big}
 \lobclaw{simple}
 \lob{29}
