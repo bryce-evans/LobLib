@@ -43,7 +43,7 @@ Use \lob for adding in any of the lobsters numbered in the documentation. Curren
 
 Watermarks can be added to the background of page by a short comand
 ```TeX
-\BgThisPage
+\lobwatermark
 ```
 #####  Watermark Settings
 
