@@ -73,7 +73,13 @@ The Clique of Size $k$ Problem in NP-Complete reduces to the Near Clique of Size
 \textbf{$\sigma$ Reduction:}
 Given graph $G = (V,E)$, add two nodes $v_1, v_2$ that connect to every $v \in V$. Solving the near clique problem on this graph solves the clique problem as well.\\
 
-If a clique of size $k$ exists in $G$, then adding $v_1, v_2$ and connecting them to every other vertex will form a near clique of size $k+2$ because no edge connects $v_1$ and $v_2$. If one or more edges are missing, then adding additional nodes that are not connected to each other will cause at least 2 edges to now be missing among the nodes, and therefore the near clique algorithm will return false. \lobtomb\\
+If a clique of size $k$ exists in $G$, then adding $v_1, v_2$ and
+connecting them to every other vertex will form a near clique of size
+$k+2$ because no edge connects $v_1$ and $v_2$. If one or more edges
+are missing, then adding additional nodes that are not connected to
+each other will cause at least 2 edges to now be missing among the
+nodes, and therefore the near clique algorithm will return
+false. \lobtomb
 
 \pagebreak
 \textbf{Example:}
@@ -166,8 +172,7 @@ Permute the columns so that the taken columns are consecutive. This is an isomor
 Because of the properties of this adjacency matrix, diagonals are the highest values in the matrices because no other value can be $>1$, meaning diagonals cannot be dominated by anything but another value in the diagonal. This forces no node to be accidentally paired up with another node by domination. For all diagonal values of $M_k$ to be dominated in $M_G$, the diagonals must align to each other, as no value in $M_G$ other than a diagonal is $\geq 2$. \\
 
 
-Because of the properties of adjacency matrices, if every value in the matrix is a 1 (excluding diagonal), then every node in that set is connected to all others in the set. Therefore, the mapping of $r(\cdot),c(\cdot)$ returns the set of nodes that form the clique. If $M_G$ contains $M_k$, then $G$ contains the clique and the algorithm returns \texttt{True}. It is guaranteed that if such a submatrix is found that it is a clique because the matrix must be centered on the diagonal, with each node the columns represent being connected to each other. If the submatrix is found within $M_G$ then, the clique exists within $G$. \lobtomb  \lobwatermark \\
- 
+Because of the properties of adjacency matrices, if every value in the matrix is a 1 (excluding diagonal), then every node in that set is connected to all others in the set. Therefore, the mapping of $r(\cdot),c(\cdot)$ returns the set of nodes that form the clique. If $M_G$ contains $M_k$, then $G$ contains the clique and the algorithm returns \texttt{True}. It is guaranteed that if such a submatrix is found that it is a clique because the matrix must be centered on the diagonal, with each node the columns represent being connected to each other. If the submatrix is found within $M_G$ then, the clique exists within $G$. \lobtomb  \lobwatermark 
 
 
 
