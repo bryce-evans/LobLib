@@ -21,8 +21,8 @@
 
 
 \begin{document}
-\vspace*{-3cm}			
-\hspace*{-0.5cm}		
+\vspace*{-3cm}
+\hspace*{-0.5cm}
 \definecolor{shadow}{rgb}{0.85,0.85,0.85}
 \lob[rotate=180,shadow,xscale=-1.2,yscale=1.2]{77}
 
@@ -51,7 +51,7 @@ This document describes the \LaTeX package \texttt{loblib}, used for outfitting 
 
 
 \textbf{Contents:}
-\begin{itemize} \itemsep-0em 
+\begin{itemize} \itemsep-0em
 \item Installation
 \item Usage
 \item Classification and Types
@@ -61,9 +61,9 @@ This document describes the \LaTeX package \texttt{loblib}, used for outfitting 
 \end{itemize}
 
 \vspace*{-3.5cm}
-\hspace*{7.5cm} 
+\hspace*{7.5cm}
 \lob[lobblue, scale=1.4]{83} \hfill
-\vspace*{-1.5cm} 
+\vspace*{-1.5cm}
 %\vspace*{3cm}
 
 \section*{Installation}
@@ -71,7 +71,7 @@ LobLib follows standard installation of \LaTeX packages.
 Copy the package files to\\ \texttt{MiKTeX/2.9/tex/latex/loblib} for Windows.\\
 
  For other users, place the folder in the \texttt{tempf/latex} folder from the root of your \LaTeX \, installation. \\
- 
+
  For for information, visit\\ \texttt{http://en.wikibooks.org/wiki/LaTeX/Installing\_Extra\_Packages}.\\
 
 * LobLib's core runs on packages Tikz and PGFOrnament.\\ Tikz is available on CTAN (\texttt{\textbackslash usepackage\{tikz\}} has auto-download).\\
@@ -119,12 +119,12 @@ All parameters supported in Tikz are supported by LobLib. Pass in styles in brac
 
 \begin{multicols}{2}
 \begin{verbatim}
-\lob[scale=.6,fill=green ]{62}   
+\lob[scale=.6,fill=green ]{62}
 \hspace*{-.5cm} \vspace*{-.2cm}
 \lob[scale=.7,fill=blue]{62b}
 \end{verbatim}
 
-\lob[scale=.6,fill=lobgreen ]{62}   
+\lob[scale=.6,fill=lobgreen ]{62}
 \hspace*{-.5cm} \vspace*{-.2cm} \lob[scale=.7,fill=lobteal]{62b}
 \end{multicols}
 
@@ -136,7 +136,7 @@ Section breaks can be inserted showing a small claw using\texttt{\textbackslash 
 \section*{Bullets and Tombstones}
 Smaller items may be used as bullets:
 
-\begin{multicols}{2} 
+\begin{multicols}{2}
 \begin{itemize}
 \item[\lobclaw{simple}] Item 1
 \item[\lobclaw{simple}] Item 2
@@ -148,9 +148,9 @@ Smaller items may be used as bullets:
 \item[\lob{29}] Item 2
 \item[\lob{29}] Item 3
 \end{itemize}
-\end{multicols} 
+\end{multicols}
 
-These symbols may well be used in place of tombstones. 
+These symbols may well be used in place of tombstones.
 \begin{multicols}{2}
 \begin{align*}
 x&=y\\
@@ -178,7 +178,7 @@ x^2 + x^2 &= x^2 + xy\\
 \end{multicols}
 
 \section*{Watermarks}
-Add a lobster watermark to any page with \texttt{\textbackslash lobwatermark}. 
+Add a lobster watermark to any page with \texttt{\textbackslash lobwatermark}.
 
 \textsc{Note:} Utilizes the \texttt{background} package and causes a conflict if the package settings are changed.
 
