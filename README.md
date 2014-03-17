@@ -1,4 +1,3 @@
-
 LobLib 
 =======
 #### The Lobster Library ####
@@ -23,10 +22,10 @@ Intended for use of problem sets, a title constructor creates a lobster themed t
 \renewcommand{\coursenumber}{ CS 4820 }
 \renewcommand{\name}{ Bryce Evans  }
 \renewcommand{\netid}{bae43}
-\renewcommand{\today}{September 12, 2013}
+\renewcommand{\today}{March 13, 2013}
 \renewcommand{\hwnum}{1}
 \renewcommand{\hwtitle}{NP-Completeness }
-\makelobtitle
+\lobtitle
 ```
 
 #### Standard Images
