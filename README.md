@@ -2,7 +2,7 @@ LobLib
 =======
 #### The Lobster Library ####
 
-LobLib is a TeX package for creating lobster themed documents and make inserting a wide range of lobster images into papers.
+LobLib is a TeX package for creating lobster themed documents and inserting a wide range of lobster images into papers.
 
 [Examples](https://github.com/bae43/LobLib/tree/master/documentation/examples) —[Full Documentation](https://github.com/bae43/LobLib/tree/master/documentation) 
 
